@@ -1,0 +1,29 @@
+nav {
+  max-width: 300px;
+  margin: 0;
+}
+
+nav .title-and-thumb {
+  display: flex;
+  align-items: center;
+}
+
+nav .title-and-thumb img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 16px;
+}
+
+nav .title {
+  margin: 0;
+  font-size: 27px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  border: 0;
+}
+
+.admin-controls hr {
+  margin: 1.5em 0;
+}
