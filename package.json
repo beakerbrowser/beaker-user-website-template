@@ -2,7 +2,7 @@
   "name": "@beaker/user-website-template",
   "version": "1.0.0",
   "description": "The template for new user websites. ",
-  "main": "assets/index.md",
+  "main": "assets/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
