@@ -1,0 +1,12 @@
+site-profile {
+  display: block;
+  text-align: center;
+  margin: 2em;
+}
+
+.thumb {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+}
