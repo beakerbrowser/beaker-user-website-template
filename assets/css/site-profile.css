@@ -4,9 +4,14 @@ site-profile {
   margin: 2em;
 }
 
-.thumb {
+site-profile .thumb {
   border-radius: 50%;
   object-fit: cover;
   width: 100px;
   height: 100px;
+}
+
+site-profile .links {
+  font-family: sans-serif;
+  font-size: 14px;
 }

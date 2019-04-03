@@ -18,8 +18,8 @@ class SiteProfile extends HTMLElement {
       <p class="description"></p>
       <p class="links">
         Links:
-        <a href="intent:unwalled.garden/view-profile?url=${encodeURIComponent(window.location)}">Social Profile</a>,
-        <a href="intent:unwalled.garden/edit-source?url=${encodeURIComponent(window.location)}">View Source</a>
+        <a href="intent:unwalled.garden/view-address-book?url=${encodeURIComponent(window.location)}">My address book</a>,
+        <a href="intent:unwalled.garden/edit-source?url=${encodeURIComponent(window.location)}">View source</a>
       </p>
     `
     this.querySelector('.title').textContent = this.info.title || 'Anonymous'
