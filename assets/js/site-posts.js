@@ -15,10 +15,21 @@ class SitePosts extends HTMLElement {
   }
 
   async load () {
-    var self = new DatArchive(window.location)
+    var self = new DatArchive('dat://f12cadfff9d8389a95c361408d1b1869072fe10f8da5ba364078d40398a293e4/')//window.location)
+    
+    // get the post files listing
     try {
       var postnames = await self.readdir('/data/posts')
-      console.log(postnames)
+    } catch (e) {
+      if (e.name === 'NotFoundError') {
+        return // no posts available
+      }
+      console.error('Failed to load any posts', e)
+      return
+    }
+
+    // read the latest 10 posts
+    try {
       postnames.sort((a, b) => b.localeCompare(a))
       this.posts = await Promise.all(postnames.slice(0, 10).map(async (postname) => {
         try {
@@ -32,7 +43,7 @@ class SitePosts extends HTMLElement {
     } catch (e) {
       console.error('Failed to load any posts', e)
     }
-    console.debug('Loaded posts:', this.posts)
+    console.info('Loaded posts:', this.posts)
     this.render()
   }
 
