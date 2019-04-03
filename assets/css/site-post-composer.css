@@ -1,0 +1,21 @@
+site-post-composer {
+  display: block;
+  width: 500px;
+  margin: 1rem auto 2rem;
+}
+
+site-post-composer textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 4em;
+  margin-bottom: 0.5rem;
+}
+
+site-post-composer .actions {
+  text-align: right;
+}
+
+site-post-composer button[disabled] {
+  display: none;
+}
