@@ -15,7 +15,6 @@ class SitePosts extends HTMLElement {
   }
 
   async load () {
-    console.log('loading')
     var self = new DatArchive(window.location)
     try {
       var postnames = await self.readdir('/data/posts')
@@ -33,7 +32,7 @@ class SitePosts extends HTMLElement {
     } catch (e) {
       console.error('Failed to load any posts', e)
     }
-    console.log(this.posts)
+    console.debug('Loaded posts:', this.posts)
     this.render()
   }
 
