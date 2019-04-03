@@ -20,6 +20,7 @@ class SiteProfile extends HTMLElement {
         Links:
         <a href="intent:unwalled.garden/view-address-book?url=${encodeURIComponent(window.location)}">My address book</a>,
         <a href="intent:unwalled.garden/edit-source?url=${encodeURIComponent(window.location)}">View source</a>
+        ${this.info.isOwner ? `[ <a href="beaker://settings">Edit my profile</a> ]` : ''}
       </p>
     `
     this.querySelector('.title').textContent = this.info.title || 'Anonymous'
