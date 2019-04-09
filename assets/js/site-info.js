@@ -1,4 +1,4 @@
-class SiteProfile extends HTMLElement {
+class SiteInfo extends HTMLElement {
   constructor () {
     super()
     this.info = null
@@ -28,4 +28,4 @@ class SiteProfile extends HTMLElement {
   }
 }
 
-customElements.define('site-profile', SiteProfile)
+customElements.define('site-info', SiteInfo)

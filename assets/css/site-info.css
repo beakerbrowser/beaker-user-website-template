@@ -1,17 +1,17 @@
-site-profile {
+site-info {
   display: block;
   text-align: center;
   margin: 2em;
 }
 
-site-profile .thumb {
+site-info .thumb {
   border-radius: 50%;
   object-fit: cover;
   width: 100px;
   height: 100px;
 }
 
-site-profile .links {
+site-info .links {
   font-family: sans-serif;
   font-size: 14px;
 }
