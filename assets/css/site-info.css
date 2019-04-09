@@ -15,3 +15,10 @@ site-info .links {
   font-family: sans-serif;
   font-size: 14px;
 }
+
+site-info .welcome span {
+  font-family: monospace;
+  border: 1px solid #ddd;
+  background: #eee;
+  padding: 2px 5px;
+}

@@ -16,11 +16,11 @@ class SiteInfo extends HTMLElement {
       <img class="thumb" src="/thumb">
       <h1 class="title"></h1>
       <p class="description"></p>
+      <p class="welcome"><span>Welcome to my personal Beaker site!</span></p>
       <p class="links">
         Links:
-        <a href="intent:unwalled.garden/view-address-book?url=${encodeURIComponent(window.location)}">My address book</a>,
-        <a href="intent:unwalled.garden/edit-source?url=${encodeURIComponent(window.location)}">View source</a>
-        ${this.info.isOwner ? `[ <a href="beaker://settings">Edit my profile</a> ]` : ''}
+        <a href="intent:unwalled.garden/view-feed?url=${encodeURIComponent(window.location)}">My feed</a>,
+        <a href="intent:unwalled.garden/view-address-book?url=${encodeURIComponent(window.location)}">My address book</a>
       </p>
     `
     this.querySelector('.title').textContent = this.info.title || 'Anonymous'
