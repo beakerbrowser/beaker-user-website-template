@@ -19,7 +19,7 @@ class SiteInfo extends HTMLElement {
       <p class="welcome"><span>Welcome to my personal Beaker site!</span></p>
       <p class="links">
         Links:
-        <a href="intent:unwalled.garden/view-feed?url=${encodeURIComponent(window.location)}">My feed</a>,
+        <a href="intent:unwalled.garden/view-feed?url=${encodeURIComponent(window.location)}">My social profile</a>,
         <a href="intent:unwalled.garden/view-address-book?url=${encodeURIComponent(window.location)}">My address book</a>
       </p>
     `
