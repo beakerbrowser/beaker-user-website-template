@@ -13,11 +13,11 @@ class SiteAdminControls extends HTMLElement {
   }
 
   render () {
-    this.innerHTML = `
+    this.innerHTML = `[
       Admin:
       <a href="beaker://settings">Edit my profile</a>,
       <a href="intent:unwalled.garden/edit-source?url=${encodeURIComponent(window.location)}">Edit source</a>
-    `
+    ]`
   }
 }
 
