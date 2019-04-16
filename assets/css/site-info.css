@@ -3,40 +3,58 @@ site-info {
   text-align: center;
 }
 
-site-info .cover {
+site-info .cover,
+site-info .cover-fallback {
   width: 100%;
-  height: 33vh;
-  max-height: 400px;
+  height: 35vh;
   object-fit: cover;
+}
+
+site-info .cover-fallback {
+  display: none;
+  background: linear-gradient(#5475d4, #3c559a);
+}
+
+site-info .cover-fallback.show {
+  display: block;
 }
 
 site-info .site-info-inner {
   width: 600px;
   margin: 0 auto;
   position: relative;
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 site-info .thumb {
   display: block;
   position: absolute;
-  top: -111px;
+  top: -150px;
   left: 50%;
   transform: translate(-50%, 0);
   border-radius: 50%;
   object-fit: cover;
   width: 200px;
   height: 200px;
-  border: 5px solid #fff;
+  border: 6px solid #fff;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.4);
 }
 
 site-info h1 {
-  font-weight: normal;
+  font-weight: 400;
   letter-spacing: -1px;
   font-size: 3rem;
   margin: 20px 0 0;
+  color: #222;
+}
+
+site-info .description {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 21px;
+  color: #333;
 }
 
 site-info .links {
-  margin: 20px 0;
+  margin: 26px 0;
+  font-size: 18px;
 }
